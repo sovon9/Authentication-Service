@@ -66,6 +66,7 @@ public class JwtUtils
 	 */
 	private Key key()
 	{
+		//Creates a new SecretKey instance for use with HMAC-SHA algorithms based on the specified key byte array.
 		return Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
 	}
 
